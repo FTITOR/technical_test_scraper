@@ -1,0 +1,29 @@
+<h1 class="text-xl font-bold mb-4">Scrape a Web Page</h1>
+
+<.form for={@changeset} phx-change="validate" phx-submit="save">
+  <div class="mb-4">
+    <.input type="text" name="scraped_page[url]" label="URL" value={@url} />
+  </div>
+  <.button>Scrape</.button>
+</.form>
+
+<h2 class="text-lg font-semibold mt-8 mb-2">Your Scraped Pages</h2>
+
+<ul>
+  <%= for page <- @scraped_pages do %>
+    <li class="mb-2">
+      <strong>
+        {page.title || "[No title]"}
+      </strong>
+      <br />
+      <a href={page.url} target="_blank">
+        {page.url}
+      </a>
+      <div>
+        <small>
+          {page.links_count} links
+        </small>
+      </div>
+    </li>
+  <% end %>
+</ul>
