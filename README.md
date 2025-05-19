@@ -15,13 +15,14 @@ This command installs Elixir dependencies and runs the necessary database migrat
 `make run`
 This command runs the database migrations and starts the Phoenix server.
   * Run unit tests (optional)
-`make run_test`
-Minimum Requirements
+`make run_test`.
 
-Elixir: 1.16.1
-Erlang: 26.2
-Node.js: 14.18.2
-OpenSSL: 3.x or higher
+## Minimum Requirements
+  * Elixir: 1.16.1
+  * Erlang: 26.2
+  * Node.js: 14.18.2
+  * OpenSSL: 3.x or higher
+
 Note: OpenSSL version 3 or higher is required because Phoenix uses it for user authentication.
 
 Accessing the App
