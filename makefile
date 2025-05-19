@@ -11,6 +11,8 @@ migrate:
 	mix ecto.setup
 
 run:
+	mix ecto.create
+	mix ecto.migrate
 	mix phx.server
 
 reset_db:
