@@ -25,7 +25,7 @@ This command runs the database migrations and starts the Phoenix server.
 
 Note: OpenSSL version 3 or higher is required because Phoenix uses it for user authentication.
 
-Accessing the App
+## Accessing the App
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
